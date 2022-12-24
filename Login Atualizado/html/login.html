@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre para o nosso time</h1>
+            <img src="/img/fingerprint-animate.svg" class="left-login-image" alt="animacao">
+        </div>
+            <div class="right-login">
+                    <div class="card-login">
+                        <h1>Login</h1>
+                            
+                        <div class="textfield">
+                            <label id="labelUsuario" for="usuario">Usuário</label>
+                            <input id="usuario" type="text" name="usuario" placeholder="">
+                        </div>
+                        <div class="textfield">
+                            <label id="labelSenha" for="senha">Senha</label>
+                            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                            <input id="senha" type="password" name="senha" placeholder="">
+                            
+                        </div>
+                        <button class="btn-login" onclick="entrar()">Entrar</button>
+
+                            <p>Não tem uma conta
+                                <a href="/html/cadastro.html">Cadastre-se</a>
+                            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="/js/login.js">
+</script>
+</html>

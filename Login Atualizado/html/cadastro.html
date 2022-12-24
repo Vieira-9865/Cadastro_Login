@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu Cadastro<br>E entre para o nosso time</h1>
+                <img src="/img/security-on-animate.svg" class="left-login-image" alt="animacao">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastrar</h1>
+                    
+                <div class="textfield">
+                    <label id="labelNome" for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder=" ">
+                </div>
+                <div class="textfield">
+                    <label id="labelUsuario" for="usuario">Usuário</label>
+                    <input id="usuario" type="text" placeholder="">
+                </div>
+                <div class="textfield">
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="senha" type="password"  placeholder="">
+                </div>
+                <div class="textfield">
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                    <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="confirmSenha" type="password"  placeholder="">
+                </div>
+                <button class="botao" onclick="cadastrar()" >Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/cadastro.js">
+</script>
+
+
+
+</html>
